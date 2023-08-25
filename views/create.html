@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/htmx.org@1.9.4"></script>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+</head>
+
+<body  style="padding: 20px;">
+    
+
+<form hx-post="/create">
+    <input type="text" name="subject" placeholder="Title">
+    <input type="text" name="meta" placeholder="Meta" className="input input-bordered w-full max-w-xs">
+    <input type="text" name="url" placeholder="URL (DRIVE)" className="input input-bordered w-full max-w-xs">
+    <textarea name="desc" placeholder="Description"></textarea>
+    <button type="submit" class="btn">Submit</button>
+</form>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+</head>
+
+<body  style="padding: 20px;">
+    
+
+    <div class="flex flex-wrap justify-evenly">
+        
+        {{#PDFS}}
+        <div class="card w-96 bg-base-100 shadow-xl" id="todo-{{ID}}">
+            <div class="card-body">
+                <h2 class="card-title">{{SUBJECT}} <div class="badge badge-secondary">{{META}}</div></h2>
+                <p>{{DESC}}</p>
+                <div class="card-actions justify-end">
+                    <a href="{{URL}}" class="btn btn-primary">OPEN</a>
+                </div>
+            </div>
+        </div>
+        {{/PDFS}}
+    </div>
+        <a href="/create" class="btn btn-lg text-3xl flex justify-self-center mt-3">
+            + UPLOAD NEW PDF
+          </a>
+    <script>
+
+    </script>
+</body>
+
+</html>
