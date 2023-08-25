@@ -9,7 +9,6 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/template/mustache/v2"
 	"github.com/google/uuid"
-	"github.com/joho/godotenv"
 )
 
 type PDF struct {
