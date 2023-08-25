@@ -21,11 +21,6 @@ type PDF struct {
 }
 
 func main() {
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatal("Error loading .env file")
-	}
-
 	dbUrl := os.Getenv("DBURL")
 	DB, err := db.CreateDB(dbUrl)
 	if err != nil {
